@@ -1,36 +1,25 @@
-// let num = 5000;
-// let str = num.toString();
+// let a = 60.54;
 
-// console.log(typeof str);
+// console.log(Number.parseInt(a));
 
-// let names = "Mosharof";
+// let b = "p20.60";
 
-// console.log(Number.isInteger(names));
+// console.log(Number.parseFloat(b));
 
-// let checkNumber = 70;
+// let x = 9 * 2;
 
-// console.log(Number.isNaN(70));
-// Task 1 
-let number = 12.3456 ;
+// console.log(Number.isNaN(x));
 
-console.log(number.toFixed(2));
+function checkNumber(value) {
+  if (typeof value == "number") {
+    return "Invalid";
+  }
+  return isFinite(value);
+}
 
-
-// Task 2
-let string = Number("40")
-
-
-
-// tsk 3 
-
-let max = Number.MAX_VALUE;
-console.log(max.toFixed(2));
-
-let dot = Number.MIN_VALUE;
-
-console.log(dot );
+checkNumber(20);        
+checkNumber(Infinity);  
+checkNumber("20");      
 
 
-let result = "a, bd " * 4;
 
-console.log(result);
